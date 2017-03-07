@@ -135,15 +135,15 @@ public class ScrollingDropDown : UIComponent, IPointerDownHandler {
 
         option.Delete.gameObject.SetActive(false);
 
-        option.Option.onClick.AddListener(() =>
+        option.OnHover = () =>
             {
                 if (subList.IsExpanded) {
-                    subList.Contract();
+                    //subList.Contract();
                 }
                 else {
                     subList.Expand();
                 }
-            });
+            };
         
         if (refresh){
             subList.BeginOptions();
