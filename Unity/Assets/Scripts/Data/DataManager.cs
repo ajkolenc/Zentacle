@@ -121,6 +121,7 @@ public class DataManager : MonoBehaviour {
         if (scene == UnsavedScene){
             UnsavedScene = CreateScene();
             SavedScenes.Add(scene);
+			SaveData();
         }
     }
 

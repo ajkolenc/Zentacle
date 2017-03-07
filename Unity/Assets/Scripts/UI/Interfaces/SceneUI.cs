@@ -143,6 +143,7 @@ public class SceneUI : MonoBehaviour {
         if (LinkedSavedScene != null){
             LinkedSavedScene.Copy(CurrentScene);
             SceneSaveChanges.gameObject.SetActive(false);
+			DataManager.Instance.SaveData();
         }
     }
         
